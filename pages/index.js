@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Link from 'next/link'
 
 //To-Do
 //make spacer responsive
@@ -28,28 +28,32 @@ export default function Home() {
         </h1>
               </div>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>About &rarr;</h3>
+        <div className="grid">  
+          <Link href='/about'>      
+          <a className   ="card">
+               <h3>About &rarr;</h3>     
           </a>
-
+        </Link>
           <a href="https://www.polywork.com/atheer" className="card">
             <h3>Polywork &rarr;</h3>
           </a>
 
+          <Link href='/projects'>      
+
           <a
-            href="https://github.com/zeit/next.js/tree/master/examples"
             className="card"
           >
             <h3>Projects &rarr;</h3>
           </a>
-
+          </Link>
+          <Link href='/blog'>      
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+           
             className="card"
           >
             <h3>Blog &rarr;</h3>
           </a>
+                    </Link>      
         </div>
       </main>
 
